@@ -1,3 +1,15 @@
+# BrochureFinals
+---
+## Developers
+- Kenneth Lacaba
+- Jonas David Celos
+---
+## The Project
+Finals project for web development class
+
+---
+## Instructions
+
 ### Project Requirements:
 1. Website Structure:
 The website should be structured into three sections to resemble a tri-fold brochure:
