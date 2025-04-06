@@ -1,9 +1,9 @@
 # BrochureFinals
----
+
 ## Developers
 - Kenneth Lacaba
 - Jonas David Celos
----
+
 ## The Project
 Finals project for web development class
 
