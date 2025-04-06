@@ -1,0 +1,22 @@
+:root {
+    --air-force-blue:   #628395;
+    --beaver:           #96897B;
+    --vanilla:          #EFE5E5;
+    --vanilla-yellow:   #DFD5A5;
+    --earth-yellow:     #DBAD6A;
+    --buff:             #CF995F;
+}
+
+body {
+    background-color: var(--vanilla);
+    margin: 0;
+    padding: 0;
+}
+
+#nav_bar{
+    background-color: var(--air-force-blue);
+    position: sticky;
+}
+
+
+
