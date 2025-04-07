@@ -1,4 +1,3 @@
-var cur_slide = 0;
 function set_slide_display(intro, facility, news) {
     var intro_fold = document.getElementById("intro_fold");
     var facility_fold = document.getElementById("facilities_fold");
@@ -9,7 +8,7 @@ function set_slide_display(intro, facility, news) {
         news_fold.style.display = (news ? "initial" : "none");
     }
 }
-function render() {
+function render_slides() {
     switch (cur_slide) {
         case 0:
             set_slide_display(true, false, false);
@@ -27,12 +26,12 @@ function render() {
 function next() {
     if (cur_slide >= 2)
         return;
+    prev_slide = cur_slide;
     cur_slide++;
-    render();
 }
 function back() {
     if (cur_slide <= 0)
         return;
+    prev_slide = cur_slide;
     cur_slide--;
-    render();
 }

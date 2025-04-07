@@ -1,6 +1,4 @@
 
-var cur_slide: number = 0
-
 function set_slide_display(intro: boolean, facility: boolean, news: boolean){
     const intro_fold = document.getElementById("intro_fold")
     const facility_fold = document.getElementById("facilities_fold")
@@ -12,7 +10,7 @@ function set_slide_display(intro: boolean, facility: boolean, news: boolean){
     }
 }
 
-function render(){
+function render_slides(){
     switch(cur_slide){
         case 0:
             set_slide_display(true, false, false)
@@ -31,13 +29,13 @@ function render(){
 function next(){
     if(cur_slide >= 2)
         return
-    cur_slide++;
-    render()
+    prev_slide = cur_slide
+    cur_slide++
 }
 
 function back(){
     if(cur_slide <= 0)
         return
-    cur_slide--;
-    render()
+    prev_slide = cur_slide
+    cur_slide--
 }

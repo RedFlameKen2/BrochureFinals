@@ -20,7 +20,8 @@ body {
     position: sticky;
 }
 
-.brochure {
+#brochure {
+    margin-left: 10vw;
     position: absolute;
     background-color: black;
     width: 240vw;
