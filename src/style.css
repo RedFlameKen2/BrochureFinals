@@ -1,5 +1,6 @@
 :root {
     --air-force-blue:   #628395;
+    --air-force-blue-dark: #527385;
     --beaver:           #96897B;
     --vanilla:          #EFE5E5;
     --vanilla-yellow:   #DFD5A5;
@@ -12,10 +13,41 @@
     --beige:            #C9ADA7;
     --sand:             #F2E9E4;
 
+    --chefchaouen-blue: #5386E4;
+    --rich-black:       #0D1C21;
+    --baby-powder:      #F0F4EF;
+    --baby-powder-dark: #E0E4DF;
+    --sage:             #BFCC94;
+    --brown-sugar:      #C57B57;
+    --feldgrau:         #627264;
+    
+    --somerset-blue:    #2C3E50;
+    --warm-sandstone:   #D5CABD;
+    --gold-luxe:        #C9A66B;
+    --clean-linen:      #F9F9F9;
+    --charcoal-gray:    #4A4A4A;
+
+    --blue0:            #e2e2e2;
+    --blue1:            #becbe2;
+    --blue2:            #9ab3e2;
+    --blue3:            #769ce2;
+    --blue4:            #5386E4;
+    --blue5:            #2d6ce2;
+    --blue6:            #0955e2;
+    --blue7:            #004fe2;
+
+    --blue4-dark:       #375999;
+
+    --purple1:          #6751e2;
+    --somerset-image:   url("../res/somerset_bg.jpg");
 }
 
 body {
-    background-color: var(--sand);
+    /* background-image: var(--somerset-image); */
+    /* background-attachment: fixed; */
+    /* background-size: 100vmax; */
+    /* background-repeat: no-repeat; */
+    background-color: var(--blue1);
     margin: 0;
     padding: 0;
     width: 100vw;
@@ -23,7 +55,7 @@ body {
 }
 
 #nav_bar{
-    background-color: var(--air-force-blue);
+    background-color: var(--baby-powder);
     position: sticky;
 }
 
@@ -33,9 +65,9 @@ body {
 }
 
 #brochure {
+    /* transform: translateX(-160vw); */
     margin-left: 10%;
     position: absolute;
-    background-color: black;
     width: 240vw;
     min-width: 1200px;
     height: 800px;
@@ -48,15 +80,15 @@ body {
 }
 
 #intro_fold {
-    background-color: var(--gray-pink);
+    background-color: var(--blue4-dark);
 }
 
 #facilities_fold {
-    background-color: var(--grayish-purple);
+    background-color: var(--blue0);
 }
 
 #news_fold {
-    background-color: var(--beige);
+    background-color: var(--blue4-dark);
 }
 
 .slide_button {
@@ -66,11 +98,74 @@ body {
     width: 80px;
 }
 
-.slide_button img{
+.slide_button img {
     width: inherit;
     height: inherit;
 }
 
+.call_to_action_panel {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.call_to_action_header {
+    color: var(--blue0);
+    width: fit-content;
+    margin: auto;
+}
+
+.call_to_action_paragraph {
+    color: var(--blue0);
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+}
+
+.registration_panel {
+    background-color: var(--blue0);
+    width: 60%;
+    margin: auto;
+    margin-top: 50px;
+    min-height: 100px;
+    border-radius: 15px;
+}
+
+.registration_panel h1 {
+    margin-left: 10%;
+    color: var(--blue7)
+}
+
+.registration_container {
+    margin: auto 10% auto 10%;
+    padding-bottom: 20px;
+}
+
+.registration_form label {
+    font-size: 14pt;
+    font-weight: bold;
+    color: var(--blue7)
+}
+
+.registration_form input[type="text"] {
+    font-size: 14pt;
+    width: 99%;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.registration_form input[name="submit_button"] {
+    width: 100%;
+    background-color: var(--blue5);
+    color: var(--blue1);
+    border: none;
+    border-radius: 8px;
+    height: 40px;
+}
+
+.registration_form input[name="submit_button"]:hover{
+    background-color: var(--blue7);
+}
 
 #slide_button_left {
     left: 20px;

@@ -36,16 +36,24 @@ function move_brochure() {
     if (brochure_pos != target_pos) {
         var direction = get_slide_diretion();
         if (direction == Direction.LEFT) {
-            if (brochure_pos >= target_pos)
-                brochure_pos = target_pos;
-            else
-                brochure_pos += SLIDE_STEP;
+            if (SLIDE_STEP > target_pos - brochure_pos)
+                brochure_pos += target_pos - brochure_pos;
+            else {
+                if (brochure_pos >= target_pos)
+                    brochure_pos = target_pos;
+                else
+                    brochure_pos += SLIDE_STEP;
+            }
         }
         else if (direction == Direction.RIGHT) {
-            if (brochure_pos <= target_pos)
-                brochure_pos = target_pos;
-            else
-                brochure_pos -= SLIDE_STEP;
+            if (-1 * SLIDE_STEP < target_pos - brochure_pos)
+                brochure_pos -= brochure_pos - target_pos;
+            else {
+                if (brochure_pos <= target_pos)
+                    brochure_pos = target_pos;
+                else
+                    brochure_pos -= SLIDE_STEP;
+            }
         }
     }
     else {
