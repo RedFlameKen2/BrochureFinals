@@ -11,6 +11,8 @@ body {
     background-color: var(--vanilla);
     margin: 0;
     padding: 0;
+    width: 100vw;
+    overflow: hidden;
 }
 
 #nav_bar{
@@ -18,5 +20,45 @@ body {
     position: sticky;
 }
 
+.brochure {
+    position: absolute;
+    background-color: black;
+    width: 240vw;
+}
 
+.brochure_fold {
+    float: left;
+    width: 80vw;
+    height: 300px;
+    /* height: 100vh; */
+}
+
+#intro_fold {
+    background-color: var(--air-force-blue);
+}
+
+#facilities_fold {
+    background-color: var(--buff);
+}
+
+#news_fold {
+    background-color: var(--vanilla-yellow);
+}
+
+.slide_button {
+    position: absolute;
+    z-index: 4;
+}
+
+#slide_button_left {
+    left: 0;
+}
+
+#slide_button_right {
+    right: 0;
+}
+
+.slide_button:hover {
+    background-color: brown;
+}
 

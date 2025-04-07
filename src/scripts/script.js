@@ -1,12 +1,12 @@
 var cur_slide = 0;
 function set_slide_display(intro, facility, news) {
-    var intro_fold = document.getElementById("intro_fold");
-    var facility_fold = document.getElementById("facilities_fold");
-    var news_fold = document.getElementById("news_fold");
-    if (intro_fold != null && facility_fold != null && news_fold != null) {
-        intro_fold.style.display = (intro ? "initial" : "none");
-        facility_fold.style.display = (facility ? "initial" : "none");
-        news_fold.style.display = (news ? "initial" : "none");
+    let intro_fold = document.getElementById("intro_fold");
+    let facility_fold = document.getElementById("facilities_fold");
+    let news_fold = document.getElementById("news_fold");
+    if (intro_fold != null && facility_fold != null && news_fold != null){
+        intro_fold.style.display = (intro ? "inline" : "none");
+        facility_fold.style.display = (facility ? "inline" : "none");
+        news_fold.style.display = (news ? "inline" : "none");
     }
 }
 function render() {
