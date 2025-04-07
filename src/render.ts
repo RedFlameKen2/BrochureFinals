@@ -34,22 +34,28 @@ function render_brochure(){
     }
 }
 
-// TODO: when the slide step is greater than the distance to target_pos, use
-// that distance instead
 function move_brochure() {
     let target_pos = (cur_slide * FOLD_WIDTH) * -1;
     if(brochure_pos != target_pos){
         let direction = get_slide_diretion()
         if(direction == Direction.LEFT){
-            if(brochure_pos >= target_pos)
-                brochure_pos = target_pos;
-            else 
-                brochure_pos += SLIDE_STEP;
+            if(SLIDE_STEP > target_pos-brochure_pos)
+                brochure_pos += target_pos-brochure_pos;
+            else {
+                if(brochure_pos >= target_pos)
+                    brochure_pos = target_pos;
+                else 
+                    brochure_pos += SLIDE_STEP;
+            }
         } else if(direction == Direction.RIGHT){
-            if(brochure_pos <= target_pos)
-                brochure_pos = target_pos;
-            else 
-                brochure_pos -= SLIDE_STEP;
+            if(-1*SLIDE_STEP < target_pos-brochure_pos)
+                brochure_pos -= brochure_pos-target_pos;
+            else {
+                if(brochure_pos <= target_pos)
+                    brochure_pos = target_pos;
+                else 
+                    brochure_pos -= SLIDE_STEP;
+            }
         }
     } else {
         animating = false
