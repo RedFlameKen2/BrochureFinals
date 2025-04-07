@@ -9,8 +9,8 @@ function update(){
 }
 
 function render(){
-    render_brochure()
     if(animating){
+        render_brochure()
     }
 }
 
@@ -32,6 +32,8 @@ function render_brochure(){
     }
 }
 
+// TODO: when the slide step is greater than the distance to target_pos, use
+// that distance instead
 function move_brochure() {
     let target_pos = (cur_slide * FOLD_WIDTH) * -1;
     if(brochure_pos != target_pos){
@@ -47,6 +49,8 @@ function move_brochure() {
             else 
                 brochure_pos -= SLIDE_STEP;
         }
+    } else {
+        animating = false
     }
 }
 

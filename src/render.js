@@ -7,8 +7,8 @@ function update() {
     move_brochure();
 }
 function render() {
-    render_brochure();
     if (animating) {
+        render_brochure();
     }
 }
 function run() {
@@ -43,6 +43,9 @@ function move_brochure() {
             else
                 brochure_pos -= SLIDE_STEP;
         }
+    }
+    else {
+        animating = false;
     }
 }
 function get_slide_diretion() {

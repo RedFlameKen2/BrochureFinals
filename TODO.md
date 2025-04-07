@@ -1,5 +1,10 @@
 # TODO
 
 - [ ] button design
-- [ ] make brochure look proper, like omg
+- [ ] disable button when animating
+    - [x] logical
+    - [ ] frontend
+- [ ] info_fold content
+- [ ] facilities_fold content
+- [ ] news_fold content
 

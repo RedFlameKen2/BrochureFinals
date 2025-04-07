@@ -24,14 +24,16 @@ function render_slides() {
     }
 }
 function next() {
-    if (cur_slide >= 2)
+    if (cur_slide >= 2 || animating)
         return;
     prev_slide = cur_slide;
     cur_slide++;
+    animating = true;
 }
 function back() {
-    if (cur_slide <= 0)
+    if (cur_slide <= 0 || animating)
         return;
     prev_slide = cur_slide;
     cur_slide--;
+    animating = true;
 }

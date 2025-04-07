@@ -10,28 +10,29 @@
         <div id="nav_bar">
         </div>
 
-        <div class="slide_button" id="slide_button_left" onclick="back()">
-            back
-        </div>
-
-        <div class="slide_button" id="slide_button_right" onclick="next()">
-            next
-        </div>
-
-
         <div class="content_container">
-
-            <div id="brochure">
-                <div class="brochure_fold" id="intro_fold">
-                </div>
-
-                <div class="brochure_fold" id="facilities_fold">
-                </div>
-
-                <div class="brochure_fold" id="news_fold">
-                </div>
+            <div class="slide_button" id="slide_button_left" onclick="back()">
+                <img src="../res/arrow_left_light.png" alt="">
             </div>
+            <div class="slide_button" id="slide_button_right" onclick="next()">
+                <img src="../res/arrow_right_light.png" alt="">
+            </div>
+            <div class="brochure_container">
+                <div id="brochure">
+                    <div class="brochure_fold" id="intro_fold">
+                    </div>
+
+                    <div class="brochure_fold" id="facilities_fold">
+                    </div>
+
+                    <div class="brochure_fold" id="news_fold">
+                    </div>
+                </div>
+
+            </div>
+            
         </div>
+
 
     </body>
     <script src="constants.js">
