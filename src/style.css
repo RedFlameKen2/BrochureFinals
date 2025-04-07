@@ -5,10 +5,17 @@
     --vanilla-yellow:   #DFD5A5;
     --earth-yellow:     #DBAD6A;
     --buff:             #CF995F;
+
+    --dark-blue:        #22223B;
+    --grayish-purple:   #4A4E69;
+    --gray-pink:        #9A8C98;
+    --beige:            #C9ADA7;
+    --sand:             #F2E9E4;
+
 }
 
 body {
-    background-color: var(--vanilla);
+    background-color: var(--sand);
     margin: 0;
     padding: 0;
     width: 100vw;
@@ -41,15 +48,15 @@ body {
 }
 
 #intro_fold {
-    background-color: var(--air-force-blue);
+    background-color: var(--gray-pink);
 }
 
 #facilities_fold {
-    background-color: var(--buff);
+    background-color: var(--grayish-purple);
 }
 
 #news_fold {
-    background-color: var(--vanilla-yellow);
+    background-color: var(--beige);
 }
 
 .slide_button {

@@ -4,7 +4,9 @@ var prev_slide = 0;
 var cur_slide = 0;
 var brochure_pos = 0;
 function update() {
-    move_brochure();
+    if (animating) {
+        move_brochure();
+    }
 }
 function render() {
     if (animating) {
@@ -27,6 +29,8 @@ function render_brochure() {
         brochure.style.transform = "translateX(" + brochure_pos + "vw)";
     }
 }
+// TODO: when the slide step is greater than the distance to target_pos, use
+// that distance instead
 function move_brochure() {
     var target_pos = (cur_slide * FOLD_WIDTH) * -1;
     if (brochure_pos != target_pos) {

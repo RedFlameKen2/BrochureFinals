@@ -5,7 +5,9 @@ var cur_slide = 0;
 var brochure_pos = 0;
 
 function update(){
-    move_brochure()
+    if(animating){
+        move_brochure()
+    }
 }
 
 function render(){
