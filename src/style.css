@@ -1,58 +1,5 @@
-:root {
-    --air-force-blue:   #628395;
-    --air-force-blue-dark: #527385;
-    --beaver:           #96897B;
-    --vanilla:          #EFE5E5;
-    --vanilla-yellow:   #DFD5A5;
-    --earth-yellow:     #DBAD6A;
-    --buff:             #CF995F;
-
-    --dark-blue:        #22223B;
-    --grayish-purple:   #4A4E69;
-    --gray-pink:        #9A8C98;
-    --beige:            #C9ADA7;
-    --sand:             #F2E9E4;
-
-    --chefchaouen-blue: #5386E4;
-    --rich-black:       #0D1C21;
-    --baby-powder:      #F0F4EF;
-    --baby-powder-dark: #E0E4DF;
-    --sage:             #BFCC94;
-    --brown-sugar:      #C57B57;
-    --feldgrau:         #627264;
-    
-    --somerset-blue:    #2C3E50;
-    --warm-sandstone:   #D5CABD;
-    --gold-luxe:        #C9A66B;
-    --clean-linen:      #F9F9F9;
-    --charcoal-gray:    #4A4A4A;
-
-    --blue0:            #e2e2e2;
-    --blue1:            #becbe2;
-    --blue2:            #9ab3e2;
-    --blue3:            #769ce2;
-    --blue4:            #5386E4;
-    --blue5:            #2d6ce2;
-    --blue6:            #0955e2;
-    --blue7:            #004fe2;
-
-    --red0:             #e2e2e2;
-    --red1:             #e2bec4;
-    --red2:             #e29aa6;
-    --red3:             #e27688;
-    --red4:             #e25169;
-    --red5:             #e22d4b;
-    --red6:             #e2092d;
-    --red7:             #e20025;
-
-    --blue4-dark:       #375999;
-
-    --purple1:          #6751e2;
-    --somerset-image:   url("../res/somerset_bg.jpg");
-    --milano-building-hero-shot:        url("../res/milano-hero-shot.jpeg");
-    --milano-bed:       url("../res/milano-bed.jpg");
-    --milano-logo:      url("../res/milano_logo.png");
-}
+@import "colors.css";
+@import "images.css";
 
 body {
     /* background-color: var(--blue1); */
@@ -63,7 +10,7 @@ body {
 }
 
 #nav_bar{
-    background-color: var(--blue0);
+    background-color: var(--lime0);
     position: fixed;
     top: 0;
     z-index: 10;
@@ -118,7 +65,7 @@ body {
 }
 
 .content_container {
-    background-color: var(--blue0);
+    background-color: var(--lime1-less);
     z-index: 4;
 }
 
@@ -143,30 +90,41 @@ body {
 }
 
 #intro_fold {
-    background-color: var(--blue4-dark);
+    background-color: var(--green5);
+}
+
+.company_image {
+}
+
+.company_image img {
+}
+
+.company_section {
+    color: var(--lime0);
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 #facilities_fold {
-    background-color: var(--blue2);
+    background-color: var(--lime1);
 }
 
 #news_fold {
-    background-color: var(--blue4-dark);
+    background-color: var(--green5);
 }
 .call_to_action_panel {
     width: 80%;
     margin: auto;
     margin-top: 50px;
 }
-
 .call_to_action_header {
-    color: var(--blue0);
+    color: var(--lime0);
     width: fit-content;
     margin: auto;
 }
 
 .call_to_action_paragraph {
-    color: var(--blue0);
+    color: var(--lime0);
     width: fit-content;
     margin: auto;
     text-align: center;
@@ -183,7 +141,7 @@ body {
 
 .registration_panel h1 {
     margin-left: 10%;
-    color: var(--blue7)
+    color: var(--green7)
 }
 
 .registration_container {
@@ -194,11 +152,11 @@ body {
 .registration_form label {
     font-size: 14pt;
     font-weight: bold;
-    color: var(--blue7);
+    color: var(--green7);
 }
 
 .registration_form input[type="checkbox"] {
-    accent-color: var(--blue5);
+    accent-color: var(--green5);
 }
 
 .registration_form input[type="text"] {
@@ -208,18 +166,31 @@ body {
     margin-bottom: 10px;
 }
 
+@keyframes scale_up {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.10);
+    }
+}
 
 .registration_form input[name="submit_button"] {
     width: 100%;
-    background-color: var(--blue5);
-    color: var(--blue1);
+    background-color: var(--lime4);
+    color: var(--green7);
+    font-weight: bold;
     border: none;
     border-radius: 8px;
     height: 40px;
 }
 
 .registration_form input[name="submit_button"]:hover{
-    background-color: var(--blue7);
+    background-color: var(--lime7);
+    font-weight: bold;
+    animation-name: scale_up;
+    animation-duration: 250ms;
+    transform: scale(1.10);
 }
 
 .slide_button {
