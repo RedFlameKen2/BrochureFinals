@@ -216,6 +216,8 @@ body {
 
 .slide_button {
     top: 50%;
+    margin-top: 25%;
+    margin-bottom: 25%;
     position: sticky;
     z-index: 4;
     width: 80px;
