@@ -86,7 +86,7 @@ body {
 .background_image_container {
     top: 0;
     left: 0;
-    width: 120vw;
+    width: 160vw;
     position: fixed;
     z-index: -7;
 }
@@ -96,12 +96,12 @@ body {
     width: inherit;
     height: inherit;
     filter: blur(8px);
+    translate: -10% -20%;
 }
 
 .hero_section {
-    margin-top: 15px;
     margin-bottom: 100px;
-    height: 600px;
+    height: 80vh;
 }
 
 .hero_section h1 {
@@ -217,7 +217,6 @@ body {
 .slide_button {
     top: 50%;
     position: sticky;
-    background-attachment: fixed;
     z-index: 4;
     width: 80px;
 }
