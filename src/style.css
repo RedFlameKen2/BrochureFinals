@@ -36,41 +36,81 @@
     --blue6:            #0955e2;
     --blue7:            #004fe2;
 
+    --red0:             #e2e2e2;
+    --red1:             #e2bec4;
+    --red2:             #e29aa6;
+    --red3:             #e27688;
+    --red4:             #e25169;
+    --red5:             #e22d4b;
+    --red6:             #e2092d;
+    --red7:             #e20025;
+
     --blue4-dark:       #375999;
 
     --purple1:          #6751e2;
     --somerset-image:   url("../res/somerset_bg.jpg");
+    --milano-building-hero-shot:        url("../res/milano-hero-shot.jpeg");
+    --milano-bed:       url("../res/milano-bed.jpg");
+    --milano-logo:      url("../res/milano_logo.png");
+}
+
+#nav_bar{
+    background-color: var(--blue0);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    height: 80px;
+    width: 100vw;
+    align-content: center;
+}
+
+.milano_logo {
+    width: 180px;
+    margin-left: 20px;
+}
+
+.milano_logo img {
+    content: var(--milano-logo);
+    width: inherit;
+    height: inherit;
+}
+
+.background_image_container {
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    position: fixed;
+}
+
+.background_image {
+    content: var(--milano-bed);
+    z-index: -7;
+    height:max-content;
+    height: inherit;
+    filter: blur(2px);
 }
 
 body {
-    /* background-image: var(--somerset-image); */
-    /* background-attachment: fixed; */
-    /* background-size: 100vmax; */
-    /* background-repeat: no-repeat; */
-    background-color: var(--blue1);
+    /* background-color: var(--blue1); */
     margin: 0;
     padding: 0;
     width: 100vw;
     overflow-x: hidden;
 }
 
-#nav_bar{
-    background-color: var(--baby-powder);
-    position: sticky;
-}
-
 .brochure_container {
-    margin-top: 60px;
-    height: 800px;
+    margin-top: 100px;
+    margin-bottom: 60px;
+    height: 1440px;
 }
 
 #brochure {
     /* transform: translateX(-160vw); */
     margin-left: 10%;
     position: absolute;
+    height: inherit;
     width: 240vw;
     min-width: 1200px;
-    height: 800px;
 }
 
 .brochure_fold {
@@ -90,19 +130,6 @@ body {
 #news_fold {
     background-color: var(--blue4-dark);
 }
-
-.slide_button {
-    top: 400px;
-    position: absolute;
-    z-index: 4;
-    width: 80px;
-}
-
-.slide_button img {
-    width: inherit;
-    height: inherit;
-}
-
 .call_to_action_panel {
     width: 80%;
     margin: auto;
@@ -144,7 +171,11 @@ body {
 .registration_form label {
     font-size: 14pt;
     font-weight: bold;
-    color: var(--blue7)
+    color: var(--blue7);
+}
+
+.registration_form input[type="checkbox"] {
+    accent-color: var(--blue5);
 }
 
 .registration_form input[type="text"] {
@@ -153,6 +184,7 @@ body {
     font-weight: bold;
     margin-bottom: 10px;
 }
+
 
 .registration_form input[name="submit_button"] {
     width: 100%;
@@ -167,12 +199,28 @@ body {
     background-color: var(--blue7);
 }
 
+.slide_button {
+    top: 50%;
+    position: sticky;
+    background-attachment: fixed;
+    z-index: 4;
+    width: 80px;
+}
+
+.slide_button img {
+    width: inherit;
+    height: inherit;
+}
+
+
 #slide_button_left {
     left: 20px;
+    float: left;
 }
 
 #slide_button_right {
     right: 20px;
+    float: right;
 }
 
 #slide_button_left:hover img{
