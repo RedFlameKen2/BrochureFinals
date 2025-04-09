@@ -4,13 +4,15 @@
 body {
     /* background-color: var(--blue1); */
     margin: 0;
+    margin-bottom: 0;
     padding: 0;
     width: 100vw;
+    height: 100vh;
     overflow-x: hidden;
 }
 
 #nav_bar{
-    background-color: var(--blue0);
+    background-color: var(--lime1-unlesser);
     position: fixed;
     top: 0;
     z-index: 10;
@@ -30,6 +32,17 @@ body {
     height: inherit;
 }
 
+.link_section {
+    float: right;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.link_section a {
+    height: 100%;
+    margin: auto;
+}
+
 .background_image_container {
     top: 0;
     left: 0;
@@ -44,17 +57,19 @@ body {
     min-width: 105vw;
     min-height: 100vh;
     translate: -2.5vw;
-    filter: blur(8px);
+    filter: blur(5px);
 }
 
 .hero_section {
     margin-bottom: 100px;
     height: 80vh;
     max-height: 80vh;
+    color: var(--green7);
+    box-shadow: stroke var(--green1) 10px;
 }
 
 .hero_section_content {
-    margin-top: 100px;
+    margin-top: 80px;
     align-content: center;
 }
 
@@ -67,29 +82,22 @@ body {
 }
 
 .content_container {
-    background-color: var(--lime0);
-    z-index: 4;
-}
-
-.brochure_container {
-    height:5760px;
+    background-color: var(--green-low-s);
 }
 
 #brochure {
     /* transform: translateX(-160vw); */
     margin-left: 10%;
-    margin-top: 10%;
+    margin-top: 100px;
     display: flex;
-    flex-direction: row;
     position: absolute;
-    min-height: max-content;
+    flex-direction: row;
     width: 240vw;
-    min-width: 1200px;
+    min-width: 1440px;
 }
 
 .brochure_fold {
     width: 33.3333333%;
-    height: inherit;
 }
 
 #intro_fold {
@@ -154,16 +162,15 @@ body {
 }
 
 .condo_image {
-    min-width: 40%;
-    margin: auto;
+    min-width: 48%;
     height: 100%;
+    background-attachment: fixed;
     margin-left: 0;
+    overflow: hidden;
 }
 
 .condo_image img {
-    content: var(--milano_hero_shot2);
-    aspect-ratio: 737/1024;
-    width: 100%;
+    content: var(--milano_hero_shot1);
     height: 100%;
 }
 
@@ -186,11 +193,13 @@ body {
     padding: 20px;
     background-color: var(--green7);
     display: flex;
+    align-items: center;
 }
 
 .amenities_section_alt {
     display: flex;
     flex-direction: row-reverse;
+    align-items: center;
     padding: 20px;
 }
 
@@ -312,15 +321,16 @@ body {
 
 .registration_panel h1 {
     margin-left: 10%;
-    color: var(--green7)
+    color: var(--green7);
+    padding-top: 50px;
 }
 
 .registration_container {
     margin: auto 10% auto 10%;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 }
 
-.registration_form label {
+.registration_form .input_label {
     font-size: 14pt;
     font-weight: bold;
     color: var(--green7);
@@ -333,7 +343,6 @@ body {
 .registration_form input[type="text"] {
     font-size: 14pt;
     width: 99%;
-    font-weight: bold;
     margin-bottom: 10px;
 }
 
@@ -395,5 +404,28 @@ body {
 
 #slide_button_right:hover img{
     content: url("../res/arrow_right_dark.png");
+}
+
+.warn_label {
+    color: red;
+}
+
+.footer {
+    padding: 30px;
+    background-color: var(--lime1-unlesser);
+    padding-bottom: 0;
+}
+
+.century_properties_logo {
+    width: 20%;
+    margin: auto;
+}
+.century_properties_logo img {
+    content: var(--century_properties_logo);
+    width: 100%;
+}
+
+.copyright_section p {
+    text-align: center;
 }
 

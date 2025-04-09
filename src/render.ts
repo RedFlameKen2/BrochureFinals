@@ -111,3 +111,17 @@ function to_facilities_fold(){
     }
 }
 
+function resize_event(){
+    const brochure = document.getElementById("brochure");
+    const content_container: any = document.getElementsByClassName("content_container");
+    if(brochure != null && content_container != null){
+        if(content_container[0].style.height != (120 + brochure.offsetHeight) + "px"){
+            content_container[0].style.height = (120 + brochure.offsetHeight) + "px"
+        }
+    }
+}
+
+window.addEventListener('resize', resize_event)
+
+window.addEventListener('scroll', resize_event)
+

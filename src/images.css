@@ -1,10 +1,12 @@
 :root {
     --somerset-image:      url("../res/somerset_bg.jpg");
     --milano_hero_shot:    url("../res/milano_hero_shot.jpeg");
+    --milano_hero_shot1:   url("../res/milano_hero_shot_cropped.jpeg");
     --milano_hero_shot2:   url("../res/milano_hero_shot2.jpg");
     --milano_hero_shot3:   url("../res/milano_hero_shot3.jpg");
     --milano_bed:          url("../res/milano_bed.jpg");
     --milano_logo:         url("../res/milano_logo.png");
+    --century_properties_logo:  url("../res/century_properties_logo.png");
     --company_bg:          url("../res/company_bg.jpg");
 
     --milano_piazza: url("../res/milano_piazza.jpeg");

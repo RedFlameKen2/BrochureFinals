@@ -4,7 +4,12 @@
 - [ ] disable button when animating
     - [x] logical
     - [ ] frontend
-- [ ] info_fold content
-- [ ] facilities_fold content
+- [x] info_fold content
+- [x] facilities_fold content
 - [ ] news_fold content
+- [x] form_validation
 
+- [ ] hero section content
+- [ ] hyprlinks
+
+- [ ] footer

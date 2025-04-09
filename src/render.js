@@ -29,8 +29,6 @@ function render_brochure() {
         brochure.style.transform = "translateX(" + brochure_pos + "vw)";
     }
 }
-// TODO: when the slide step is greater than the distance to target_pos, use
-// that distance instead
 function move_brochure() {
     var target_pos = (cur_slide * FOLD_WIDTH) * -1;
     if (brochure_pos != target_pos) {
@@ -106,3 +104,14 @@ function to_facilities_fold() {
         brochure.style.transform = "translateX(-80vw)";
     }
 }
+function resize_event() {
+    var brochure = document.getElementById("brochure");
+    var content_container = document.getElementsByClassName("content_container");
+    if (brochure != null && content_container != null) {
+        if (content_container[0].style.height != (120 + brochure.offsetHeight) + "px") {
+            content_container[0].style.height = (120 + brochure.offsetHeight) + "px";
+        }
+    }
+}
+window.addEventListener('resize', resize_event);
+window.addEventListener('scroll', resize_event);
