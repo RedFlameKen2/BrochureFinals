@@ -1,8 +1,17 @@
 :root {
-    --somerset-image:               url("../res/somerset_bg.jpg");
-    --milano-building-hero-shot:    url("../res/milano-hero-shot.jpeg");
-    --milano-building-hero-shot2:   url("../res/milano-hero-shot2.jpg");
-    --milano-bed:                   url("../res/milano-bed.jpg");
-    --milano-logo:                  url("../res/milano_logo.png");
-    --company_bg:                   url("../res/company_bg.jpg");
+    --somerset-image:      url("../res/somerset_bg.jpg");
+    --milano_hero_shot:    url("../res/milano_hero_shot.jpeg");
+    --milano_hero_shot2:   url("../res/milano_hero_shot2.jpg");
+    --milano_hero_shot3:   url("../res/milano_hero_shot3.jpg");
+    --milano_bed:          url("../res/milano_bed.jpg");
+    --milano_logo:         url("../res/milano_logo.png");
+    --company_bg:          url("../res/company_bg.jpg");
+
+    --milano_piazza: url("../res/milano_piazza.jpeg");
+    --milano_lobby:  url("../res/milano_lobby.jpg");
+    --milano_pool:   url("../res/milano_pool.jpeg");
+    --milano_pool2:  url("../res/milano_pool2.jpeg");
+    --milano_gym:    url("../res/milano_gym.jpeg");
+    --milano_gym2:   url("../res/milano_gym2.jpeg");
+    --milano_spa:    url("../res/milano_spa.png");
 }

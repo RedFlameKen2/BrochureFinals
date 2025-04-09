@@ -10,7 +10,7 @@ body {
 }
 
 #nav_bar{
-    background-color: var(--lime0);
+    background-color: var(--blue0);
     position: fixed;
     top: 0;
     z-index: 10;
@@ -25,7 +25,7 @@ body {
 }
 
 .milano_logo img {
-    content: var(--milano-logo);
+    content: var(--milano_logo);
     width: inherit;
     height: inherit;
 }
@@ -40,11 +40,11 @@ body {
 }
 
 .background_image {
-    content: var(--milano-bed);
-    min-width: 100vw;
+    content: var(--milano_hero_shot3);
+    min-width: 105vw;
     min-height: 100vh;
+    translate: -2.5vw;
     filter: blur(8px);
-    translate: -20% ;
 }
 
 .hero_section {
@@ -67,12 +67,12 @@ body {
 }
 
 .content_container {
-    background-color: var(--lime1-less);
+    background-color: var(--lime0);
     z-index: 4;
 }
 
 .brochure_container {
-    height:2440px;
+    height:5760px;
 }
 
 #brochure {
@@ -118,6 +118,7 @@ body {
 }
 
 .core_section {
+    background-color: var(--lime1-less);
     text-align: justify;
 }
 
@@ -126,7 +127,7 @@ body {
 }
 
 .core_section_container {
-    color: var(--lime0);
+    color: var(--green7);
 }
 
 .core_section_flex {
@@ -148,7 +149,7 @@ body {
 }
 
 .condo_section_container {
-    background-color: var(--lime1);
+    color: var(--lime0);
     display: flex;
 }
 
@@ -156,11 +157,11 @@ body {
     min-width: 40%;
     margin: auto;
     height: 100%;
-    margin-left: 20px;
+    margin-left: 0;
 }
 
 .condo_image img {
-    content: var(--milano-building-hero-shot2);
+    content: var(--milano_hero_shot2);
     aspect-ratio: 737/1024;
     width: 100%;
     height: 100%;
@@ -171,9 +172,112 @@ body {
     text-align: justify;
 }
 
-
 #facilities_fold {
-    background-color: var(--lime1);
+    background-color: var(--lime1-less);
+}
+
+.facilities_fold_section {
+    color: var(--green7);
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.amenities_section {
+    padding: 20px;
+    background-color: var(--green7);
+    display: flex;
+}
+
+.amenities_section_alt {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 20px;
+}
+
+.amenities_section_alt .amenities_content {
+    color: var(--green7);
+}
+.amenities_content {
+    color: var(--lime0);
+    padding: 20px;
+}
+
+.amenities_image {
+    min-width: 50%;
+}
+
+.amenities_image img {
+    width: 100%;
+}
+
+.piazza_image {
+    content: var(--milano_piazza);
+}
+
+.pool_image {
+    content: var(--milano_pool2);
+}
+
+.lobby_image {
+    content: var(--milano_lobby);
+}
+
+.gym_image {
+    content: var(--milano_gym);
+}
+
+.spa_image {
+    content: var(--milano_spa);
+}
+
+.testimony_section {
+    padding-top: 1px;
+    background-color: var(--green7);
+    color: var(--lime0);
+    padding-bottom: 20px;
+}
+
+.testimony_container {
+    margin: 50px;
+    margin-bottom: 0px;
+}
+
+.testimony_box {
+    margin-bottom: 20px;
+}
+
+.review_header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.rating {
+    background-color: var(--lime3);
+    color: var(--green7);
+    width: fit-content;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.reviewer {
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.testimony_content {
+    color: var(--green7);
+    background-color: var(--lime0);
+    border-radius: 15px;
+    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 1px;
+}
+
+.review {
+    background-color: var(--lime1-lesser);
+    padding: 10px;
+    border-radius: 15px;
 }
 
 #news_fold {
