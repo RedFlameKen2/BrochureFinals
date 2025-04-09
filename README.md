@@ -21,16 +21,6 @@ The website should be structured into three sections to resemble a tri-fold broc
 
 * Section 2: Facilities & Offerings
     * Showcase the amenities and services offered (e.g., gym, pool, lounge, security, parking, etc.).
-        * Ammenities
-            - [ ] Piazza
-            - [ ] Pool
-            - [ ] Grand Lobby
-            - [ ] Spa/hammam and Gym
-        * Services
-            - [ ] Concierge
-            - [ ] Laundry and Dry Cleaning
-            - [ ] Electric and Maintenance Services
-            - [ ] Security
     * Provide images and descriptions of the condominium’s features.
     * Include testimonials or client experiences to enhance credibility.
 

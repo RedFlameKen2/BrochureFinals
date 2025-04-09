@@ -1,8 +1,20 @@
 @import "images.css";
 @import "colors.css";
+@import "sizes.css";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@keyframes scale_up {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.10);
+    }
+}
 
 body {
     /* background-color: var(--blue1); */
+    font-family: Roboto;
     margin: 0;
     margin-bottom: 0;
     padding: 0;
@@ -39,8 +51,16 @@ body {
 }
 
 .link_section a {
-    height: 100%;
+    font-size: var(--anchor-size);
     margin: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: var(--green7);
+}
+
+.link_section a:hover{
+    color: var(--lime7);
 }
 
 .background_image_container {
@@ -57,15 +77,19 @@ body {
     min-width: 105vw;
     min-height: 100vh;
     translate: -2.5vw;
-    filter: blur(5px);
+    filter: blur(5px) brightness(50%);
 }
 
 .hero_section {
     margin-bottom: 100px;
     height: 80vh;
     max-height: 80vh;
-    color: var(--green7);
+    color: var(--lime0);
     box-shadow: stroke var(--green1) 10px;
+}
+
+.hero_section_hl {
+    color: var(--lime7);
 }
 
 .hero_section_content {
@@ -74,7 +98,7 @@ body {
 }
 
 .hero_section_content h1 {
-    width: 60%;
+    width: 80%;
     margin: auto;
     text-align: center;
     margin-top: 35vh;
@@ -123,9 +147,12 @@ body {
 }
 
 .company_section {
+    font-size: var(--paragraph-l);
+
 }
 
 .core_section {
+    font-size: var(--paragraph-l);
     background-color: var(--lime1-less);
     text-align: justify;
 }
@@ -157,6 +184,7 @@ body {
 }
 
 .condo_section_container {
+    font-size: var(--paragraph-l);
     color: var(--lime0);
     display: flex;
 }
@@ -184,9 +212,11 @@ body {
 }
 
 .facilities_fold_section {
+    font-size: var(--paragraph-l);
     color: var(--green7);
     margin-left: 50px;
     margin-right: 50px;
+    margin-top: 50px;
 }
 
 .amenities_section {
@@ -240,6 +270,7 @@ body {
 }
 
 .testimony_section {
+    font-size: var(--paragraph-l);
     padding-top: 1px;
     background-color: var(--green7);
     color: var(--lime0);
@@ -262,6 +293,8 @@ body {
 }
 
 .rating {
+    font-size: var(--rating-size);
+    font-weight: bold;
     background-color: var(--lime3);
     color: var(--green7);
     width: fit-content;
@@ -293,6 +326,7 @@ body {
     background-color: var(--green5);
 }
 .call_to_action_panel {
+    font-size: var(--paragraph-l);
     width: 80%;
     margin: auto;
     margin-top: 50px;
@@ -311,6 +345,7 @@ body {
 }
 
 .registration_panel {
+    font-size: var(--paragraph-l);
     background-color: var(--blue0);
     width: 60%;
     margin: auto;
@@ -346,17 +381,9 @@ body {
     margin-bottom: 10px;
 }
 
-@keyframes scale_up {
-    from {
-        transform: scale(1);
-    }
-    to {
-        transform: scale(1.10);
-    }
-}
-
 .registration_form input[name="submit_button"] {
     width: 100%;
+    font-size: var(--paragraph-l);
     background-color: var(--lime4);
     color: var(--green7);
     font-weight: bold;
