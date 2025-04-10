@@ -412,6 +412,7 @@ body {
 .registration_form input[type="text"] {
     font-size: 14pt;
     width: 99%;
+    padding: 8px;
     margin-top: 10px;
     margin-bottom: 30px;
 }
