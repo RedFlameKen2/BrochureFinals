@@ -14,6 +14,7 @@ function render(){
     if(animating){
         render_brochure()
     }
+    resize_event();
 }
 
 function run(){
@@ -111,12 +112,23 @@ function to_facilities_fold(){
     }
 }
 
+function resize_container(content_container: any, brochure: any){
+    content_container[0].style.height = (120 + brochure.offsetHeight) + "px"
+}
+
+function resize_content_container(){
+    const brochure = document.getElementById("brochure");
+    const content_container: any = document.getElementsByClassName("content_container");
+    if(brochure != null && content_container != null)
+        content_container[0].style.height = (120 + brochure.offsetHeight) + "px"
+}
+
 function resize_event(){
     const brochure = document.getElementById("brochure");
     const content_container: any = document.getElementsByClassName("content_container");
     if(brochure != null && content_container != null){
         if(content_container[0].style.height != (120 + brochure.offsetHeight) + "px"){
-            content_container[0].style.height = (120 + brochure.offsetHeight) + "px"
+            resize_container(content_container, brochure)
         }
     }
 }

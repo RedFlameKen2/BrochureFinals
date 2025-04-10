@@ -337,6 +337,17 @@ body {
 #news_fold {
     background-color: var(--green5);
 }
+
+.news_separator {
+    margin: 50px;
+    color: var(--lime0);
+}
+
+.register_section {
+    position: relative;
+    margin: auto;
+}
+
 .call_to_action_panel {
     font-size: var(--paragraph-l);
     width: 80%;
@@ -359,7 +370,7 @@ body {
 .registration_panel {
     font-size: var(--paragraph-l);
     background-color: var(--blue0);
-    width: 60%;
+    width: 50%;
     margin: auto;
     margin-top: 50px;
     min-height: 100px;
@@ -390,7 +401,8 @@ body {
 .registration_form input[type="text"] {
     font-size: 14pt;
     width: 99%;
-    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 
 .registration_form input[name="submit_button"] {
@@ -401,6 +413,7 @@ body {
     font-weight: bold;
     border: none;
     border-radius: 8px;
+    margin-top: 20px;
     height: 40px;
 }
 
