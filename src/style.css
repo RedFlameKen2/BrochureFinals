@@ -459,7 +459,7 @@ body {
 }
 
 .warn_label {
-    color: red;
+    color: var(--red7);
 }
 
 .footer {
