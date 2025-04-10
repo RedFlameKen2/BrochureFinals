@@ -99,7 +99,7 @@ body {
     min-width: 105vw;
     min-height: 100vh;
     translate: -2.5vw;
-    filter: blur(5px) brightness(50%);
+    filter: blur(5px) brightness(40%);
 }
 
 .hero_section {
