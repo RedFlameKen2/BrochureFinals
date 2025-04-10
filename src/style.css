@@ -58,6 +58,8 @@ body {
 .link_section {
     float: right;
     padding: 10px;
+    padding-top: 15px;
+    padding-bottom: 5px;
     margin-right: 20px;
     display: flex;
 }
