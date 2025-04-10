@@ -59,15 +59,26 @@ body {
     float: right;
     padding: 10px;
     margin-right: 20px;
+    display: flex;
 }
 
 .link_section a {
     font-size: var(--anchor-size);
+    color: var(--green7);
+    text-decoration: none;
+}
+
+.nav_anchor {
     margin: auto;
     margin-left: 10px;
     margin-right: 10px;
-    text-decoration: none;
-    color: var(--green7);
+}
+
+.nav_anchor:hover {
+    animation-name: scale_up;
+    animation-duration: 250ms;
+    transform: scale(1.10);
+
 }
 
 .link_section a:hover{
@@ -423,6 +434,7 @@ body {
     animation-name: scale_up;
     animation-duration: 250ms;
     transform: scale(1.10);
+    cursor: pointer;
 }
 
 .slide_button {
