@@ -370,7 +370,7 @@ body {
 .registration_panel {
     font-size: var(--paragraph-l);
     background-color: var(--blue0);
-    width: 50%;
+    width: 60%;
     margin: auto;
     margin-top: 50px;
     min-height: 100px;
