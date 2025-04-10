@@ -1,7 +1,6 @@
 @import "images.css";
 @import "colors.css";
-@import "sizes.css";
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import "fonts.css";
 
 @keyframes scale_up {
     from {
@@ -13,14 +12,22 @@
 }
 
 body {
-    /* background-color: var(--blue1); */
-    font-family: Roboto;
+    font-family: var(--montserrat-font);
     margin: 0;
-    margin-bottom: 0;
     padding: 0;
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
+}
+
+.wrapper {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    margin-bottom: 0;
+    margin: 0;
+    padding: 0;
 }
 
 #nav_bar{
@@ -28,14 +35,18 @@ body {
     position: fixed;
     top: 0;
     z-index: 10;
-    height: 80px;
+    height: 5vh;
+    min-height: 80px;
     width: 100vw;
+    min-width: 600px;
     align-content: center;
 }
 
 .milano_logo {
-    width: 180px;
+    height: 70%;
     margin-left: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .milano_logo img {
@@ -81,6 +92,7 @@ body {
 }
 
 .hero_section {
+    font-family: var(--playfair-font);
     margin-bottom: 100px;
     height: 80vh;
     max-height: 80vh;
@@ -198,7 +210,7 @@ body {
 }
 
 .condo_image img {
-    content: var(--milano_hero_shot1);
+    content: var(--milano_hero_shot2);
     height: 100%;
 }
 
@@ -440,11 +452,11 @@ body {
 .footer {
     padding: 30px;
     background-color: var(--lime1-unlesser);
-    padding-bottom: 0;
+    padding-bottom: 1px;
 }
 
 .century_properties_logo {
-    width: 20%;
+    width: 20vw;
     margin: auto;
 }
 .century_properties_logo img {

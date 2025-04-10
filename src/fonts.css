@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root {
+    --rating-size:              14pt;
+    --anchor-size:              14pt;
+    --paragraph-s:              8pt;
+    --paragraph-m:              11pt;
+    --paragraph-m2:             12pt;
+    --paragraph-l:              14pt;
+
+    --montserrat-font:          "Montserrat", sans-serif;
+    --playfair-font:          "Playfair Display", serif;
+}
